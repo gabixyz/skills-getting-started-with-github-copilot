@@ -58,20 +58,127 @@ section h3 {
 }
 
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+  border: 1px solid #e3ebf7;
+  box-shadow: 0 10px 25px rgba(26, 35, 126, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(26, 35, 126, 0.12);
+}
+
+.card-accent {
+  height: 6px;
+  background: linear-gradient(90deg, #1a237e 0%, #3949ab 100%);
+}
+
+.card-content {
+  padding: 16px 18px 18px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+  margin-bottom: 6px;
+  color: #1a237e;
+  font-size: 1.15rem;
 }
 
-.activity-card p {
+.card-description {
+  color: #5f6b7a;
+  margin-bottom: 0;
+}
+
+.availability-pill {
+  background-color: #e8f0fe;
+  color: #1a73e8;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.card-meta {
+  margin-bottom: 12px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4b5563;
+}
+
+.meta-item p {
+  margin-bottom: 0;
+}
+
+.participants-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e7ecf2;
+}
+
+.participants-heading {
   margin-bottom: 8px;
+  color: #37474f;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.participants-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+}
+
+.participant-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: linear-gradient(135deg, #eef6ff 0%, #dcecff 100%);
+  color: #1565c0;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  border: 1px solid #cfe3ff;
+}
+
+.participant-name {
+  line-height: 1;
+}
+
+.participant-remove {
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0;
+}
+
+.participant-remove:hover {
+  color: #d32f2f;
+}
+
+.participant-chip.empty {
+  background: #f3f4f6;
+  color: #6b7280;
+  border-color: #e5e7eb;
 }
 
 .form-group {
